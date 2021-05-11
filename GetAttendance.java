@@ -119,7 +119,7 @@ public class GetAttendance extends AbstractProcessor {
         //
     	CassandraConnector client = new CassandraConnector();
     	JSONArray returnData = new JSONArray();
-    	client.connect("52.204.251.4", 9042);
+    	client.connect("HOST", 9042);
     	Session Session;
    	    Session = client.getSession();
    	    JSONObject obj = new JSONObject(alldata);
